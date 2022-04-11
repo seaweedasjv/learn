@@ -1,0 +1,16 @@
+//结构体是一种自定义数据类型
+int main()
+{
+    typedef struct creature
+    {
+        char name[10];
+        int height;
+        int weight;
+        char sex[10];
+    }creature;//将结构体类型重命名
+    creature mick = { "mick",178,56,"male" };//创建结构体变量
+    printf("%s is a %s\n", mick.name, mick.sex);//使用"."访问结构体成员
+    creature* p = &mick;
+    printf("%s 身高 %d", p->name, (* p).height);//通过 结构体指针 访问 结构体成员 的两种方法."."的优先级高于"*"
+    return 0;
+}
