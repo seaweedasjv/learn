@@ -1,7 +1,15 @@
 //整型提升
+/*有符号数，整数左边补0，负数左边补1
+无符号数，左边补0*/
 
 int main()
 {
-  char a = 128
-  printf("%d",a)
+  char a1 = 128;//char型128 = -128；
+  unsigned char a2 = 128;
+  char b1 = -1;
+  unsigned char b2 = -1;
+  
+  printf("%d，%u,%d,%d,%d",a1,a1,a2,b1,b2);//-128,4294967168,128,-1,255
+  
+  return 0;
 }
