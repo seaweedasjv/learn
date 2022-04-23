@@ -1,0 +1,12 @@
+int main()
+{
+  char* a = "abcd";
+  char* b = "abcd";
+  char* c = "abc";
+  char d[] = "abcd"
+  char e = "abcd" //常量字符串传参或赋值传的是首字符地址，存放在char类型会溢出。
+  a == b?printf("相等\n"):printf("不相等\n");
+  a == c?printf("相等\n"):printf("不相等\n");
+  a == d?printf("相等\n"):printf("不相等\n");//输出相等，不相等，不相等
+  return 0;
+}
