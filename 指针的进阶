@@ -1,5 +1,6 @@
 int main()
 {
+  //字符指针
   char* a = "abcd";
   char* b = "abcd";
   char* c = "abc";
@@ -7,6 +8,13 @@ int main()
   char e = "abcd" //常量字符串传参或赋值传的是首字符地址，存放在char类型会溢出。
   a == b?printf("相等\n"):printf("不相等\n");
   a == c?printf("相等\n"):printf("不相等\n");
-  a == d?printf("相等\n"):printf("不相等\n");//输出相等，不相等，不相等
+  a == d?printf("相等\n"):printf("不相等\n");
+  //输出相等，不相等，不相等
+  
+  //指针数组
+  int f[] = {4,5,6};
+  int g[] = {7,8,9};
+  int* h[] = {f,g};
+  printf("%d",h[0][0]);//输出4
   return 0;
 }
